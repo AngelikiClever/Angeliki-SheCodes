@@ -54,3 +54,8 @@ img {
   padding: 20px 20px 20px 20px;
   align-items: center;
 }
+
+p {
+  font-family: "Indie Flower", cursive;
+  margin-top: 50%;
+}
