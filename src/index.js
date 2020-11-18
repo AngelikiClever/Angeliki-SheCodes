@@ -37,6 +37,8 @@ function showTemp(response) {
   let citytemp = Math.round(response.data.main.temp);
   let degrees = document.querySelector("#degrees");
   degrees.innerHTML = `${citytemp}`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
 }
 
 function handlePosition(position) {
