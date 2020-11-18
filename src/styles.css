@@ -28,13 +28,7 @@ h3 {
   margin-top: 1%;
   margin-bottom: 20%;
 }
-img {
-  width: 300px;
-  display: block;
-  margin-left: 20px;
-  margin-top: 15%;
-  margin-bottom: 20%;
-}
+
 .card-header {
   text-align: center;
   font-family: "Krona One", sans-serif;
@@ -63,5 +57,9 @@ p {
 }
 
 .icon img {
-  width: 2px;
+  width: 30px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 15%;
+  margin-bottom: 20%;
 }
