@@ -73,13 +73,13 @@ p {
 }
 
 .btn-outline-success {
-  background-color: white;
-  color: #735d78;
-  border-color: #735d78;
+  background-color: #735d78;
+  color: antiquewhite;
+  border-color: antiquewhite;
 }
 
 .btn-outline-success:hover {
-  background-color: #735d78;
-  text-decoration-color: antiquewhite;
-  border-color: antiquewhite;
+  background-color: white;
+  color: #735d78;
+  border-color: #735d78;
 }
