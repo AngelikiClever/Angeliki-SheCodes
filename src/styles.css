@@ -83,3 +83,9 @@ p {
   color: #735d78;
   border-color: #735d78;
 }
+.btn-outline-success:active {
+  background-color: white;
+  color: #735d78;
+  border-color: #735d78;
+  box-shadow: thistle;
+}
