@@ -11,21 +11,21 @@ body {
   background-color: rgba(242, 233, 228, 0.5);
 }
 h1 {
-  color: #555b6e;
+  color: #4a4e69;
   font-family: "Indie Flower", cursive;
   text-align: right;
   margin-top: 15%;
   margin-bottom: 0%;
 }
 h2 {
-  color: #555b6e;
+  color: #4a4e69;
   font-family: "Indie Flower", cursive;
   text-align: right;
   margin-top: 1%;
   margin-bottom: 0%;
 }
 h3 {
-  color: #555b6e;
+  color: #4a4e69;
   font-family: "Indie Flower", cursive;
   text-align: right;
   margin-top: 1%;
@@ -35,7 +35,7 @@ h3 {
 .card-header {
   text-align: center;
   font-family: "Krona One", sans-serif;
-  color: #33a2b7;
+  color: #b392ac;
   font-size: 15px;
 }
 .card-title {
@@ -45,7 +45,7 @@ h3 {
 .card-text {
   text-align: center;
   font-family: "Krona One", sans-serif;
-  color: #33a2b7;
+  color: #b392ac;
 }
 .row {
   padding: 20px 20px 20px 20px;
