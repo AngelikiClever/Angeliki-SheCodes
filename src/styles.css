@@ -4,6 +4,8 @@ body {
 .weatherapp {
   border: double;
   border-color: aliceblue;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 h1 {
   color: #555b6e;
