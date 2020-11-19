@@ -1,11 +1,9 @@
 body {
-  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-  background-blend-mode: screen;
+  background-image: url("https://images.unsplash.com/photo-1514477917009-389c76a86b68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1322&q=80");
+}
+.weatherapp {
+  border: double;
+  border-color: aliceblue;
 }
 h1 {
   color: #555b6e;
