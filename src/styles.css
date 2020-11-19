@@ -89,3 +89,6 @@ p {
   border-color: #735d78;
   box-shadow: thistle;
 }
+.form-inline {
+  margin: 0 auto;
+}
