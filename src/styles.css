@@ -81,4 +81,5 @@ p {
 .btn-outline-success:hover {
   background-color: #735d78;
   text-decoration-color: antiquewhite;
+  border-color: antiquewhite;
 }
