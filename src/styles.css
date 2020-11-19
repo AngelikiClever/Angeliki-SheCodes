@@ -75,7 +75,7 @@ p {
 .btn-outline-success {
   background-color: white;
   text-decoration-color: #735d78;
-  border: #735d78;
+  border-color: #735d78;
 }
 
 .btn-outline-success:hover {
