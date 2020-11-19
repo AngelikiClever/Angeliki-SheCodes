@@ -4,6 +4,7 @@ body {
 .weatherapp {
   border: double;
   border-color: aliceblue;
+  width: 900px;
   margin-top: 5%;
   margin-bottom: 5%;
   background-color: rgba(242, 233, 228, 0.5);
