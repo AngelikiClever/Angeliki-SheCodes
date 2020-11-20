@@ -19,7 +19,7 @@ body {
 }
 
 .justify-content-around {
-  height: 200px;
+  height: 250px;
   padding-bottom: 10px;
 }
 h1 {
@@ -73,7 +73,7 @@ p {
   font-family: "Indie Flower", cursive;
   margin-top: 5%;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .icon img {
