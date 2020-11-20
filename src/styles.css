@@ -5,7 +5,8 @@ body {
   border: double;
   border-color: aliceblue;
   width: 900px;
-  margin-top: 80%;
+  margin-top: 10%;
+  padding-top: 20px;
   margin: 0 auto;
   margin-bottom: 5%;
   background-color: rgba(242, 233, 228, 0.5);
