@@ -1,12 +1,14 @@
 body {
   background-image: url("https://cdn.shopify.com/s/files/1/1555/7781/products/Cloudy_Night_SMALL_1080x.jpg?v=1538052354");
 }
+.container {
+  margin-bottom: 50%;
+}
 .weatherapp {
   border: double;
   border-color: aliceblue;
   width: 900px;
   margin-top: 10%;
-  padding-top: 20px;
   margin: 0 auto;
   margin-bottom: 5%;
   background-color: rgba(242, 233, 228, 0.5);
