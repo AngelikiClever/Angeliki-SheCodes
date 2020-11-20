@@ -19,8 +19,8 @@ body {
 }
 
 .justify-content-around {
-  height: 260px;
-  padding-top: none;
+  height: 230px;
+  padding-bottom: 10px;
 }
 h1 {
   color: aliceblue;
