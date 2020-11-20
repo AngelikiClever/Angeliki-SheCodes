@@ -57,14 +57,14 @@ h3 {
   align-items: center;
   margin-bottom: 3px;
   border-bottom: 10px;
-  content: 924px 280px;
+  height: 280px;
 }
 
 p {
   font-family: "Indie Flower", cursive;
   margin-top: 5%;
   text-align: center;
-  font-size: 8px;
+  font-size: 13px;
 }
 
 .icon img {
