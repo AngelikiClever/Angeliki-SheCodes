@@ -48,8 +48,9 @@ function showTemp(response) {
 }
 
 function description(response) {
+  let citydescription = `${response.data.description}`;
   let weatherdescription = document.querySelector("#weatherdescription");
-  let citydescription = Math.round(response.data.main.description);
+  
   weatherdescription.innerHTML = `${citydescription}`;
    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
   axios.get(apiUrl).then(description);
