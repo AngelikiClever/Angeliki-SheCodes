@@ -45,15 +45,12 @@ function showTemp(response) {
   degrees.innerHTML = `${citytemp}`;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
-}
 
-function description(response) {
-  let citydescription = `${response.data.weather[0].description}`;
   let weatherdescription = document.querySelector("#weatherdescription");
   
-  weatherdescription.innerHTML = `${citydescription}`;
-   
+  weatherdescription.innerHTML = `${response.data.weather[0].description}`;
 }
+
 
 function showSpeed(response) {
   let cityspeed = `${response.data.wind.speed}`
