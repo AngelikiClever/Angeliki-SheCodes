@@ -44,7 +44,22 @@ h3 {
   margin-bottom: 5%;
   font-size: 40px;
 }
+.weatherdescription {
+  color: aliceblue;
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+}
+.wind {
+  color: aliceblue;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
 
+.precipitation {
+  color: aliceblue;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+}
 .card-header {
   text-align: center;
   font-family: "Indie Flower", cursive;
