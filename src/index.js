@@ -48,7 +48,7 @@ function showTemp(response) {
 }
 
 function description(response) {
-  let citydescription = `${response.data.description}`;
+  let citydescription = `${response.data.weather.description}`;
   let weatherdescription = document.querySelector("#weatherdescription");
   
   weatherdescription.innerHTML = `${citydescription}`;
