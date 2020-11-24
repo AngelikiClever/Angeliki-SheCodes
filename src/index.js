@@ -48,12 +48,11 @@ function showTemp(response) {
 }
 
 function description(response) {
-  let citydescription = `${response.data.weather.description}`;
+  let citydescription = `${response.data.weather[0].description}`;
   let weatherdescription = document.querySelector("#weatherdescription");
   
   weatherdescription.innerHTML = `${citydescription}`;
-   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
-  axios.get(apiUrl).then(description);
+   
 }
 
 function showSpeed(response) {
@@ -66,9 +65,8 @@ function showSpeed(response) {
 
 function humidity(response) {
   let humidityvalue = document.querySelector("#humidityvalue");
-  humidityvalue.innerHTML = `${response.data.wind.humidity}`;
-   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
-  axios.get(apiUrl).then(humidity);
+  humidityvalue.innerHTML = `${response.data.main.humidity}`;
+ 
 }
 
 function handlePosition(position) {
