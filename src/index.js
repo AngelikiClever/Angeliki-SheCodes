@@ -49,22 +49,12 @@ function showTemp(response) {
   let weatherdescription = document.querySelector("#weatherdescription");
   
   weatherdescription.innerHTML = `${response.data.weather[0].description}`;
-}
-
-
-function showSpeed(response) {
-  let cityspeed = `${response.data.wind.speed}`
   let windspeed = document.querySelector("#windspeed");
-  windspeed.innerHTML = `${cityspeed}`;
-   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
-  axios.get(apiUrl).then(showSpeed);
+  windspeed.innerHTML = `${response.data.wind.speed}`
+    let humidityvalue = document.querySelector("#humidityvalue");
+  humidityvalue.innerHTML = `${response.data.main.humidity}`;
 }
 
-function humidity(response) {
-  let humidityvalue = document.querySelector("#humidityvalue");
-  humidityvalue.innerHTML = `${response.data.main.humidity}`;
- 
-}
 
 function handlePosition(position) {
   console.log(position.coords.latitude);
