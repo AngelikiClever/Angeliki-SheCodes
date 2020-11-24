@@ -47,14 +47,25 @@ function showTemp(response) {
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
 }
 
-function showSpeed(response) {
+function description(response) {
   let weatherdescription = document.querySelector("#weatherdescription");
   weatherdescription.innerHTML = `${response.data.main.description}`;
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+  axios.get(apiUrl).then(description);
 }
 
 function showSpeed(response) {
   let windspeed = document.querySelector("#windspeed");
   windspeed.innerHTML = `${response.data.wind.speed}`;
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+  axios.get(apiUrl).then(showSpeed);
+}
+
+function humidity(response) {
+  let humidityvalue = document.querySelector("#humidityvalue");
+  humidityvalue.innerHTML = `${response.data.wind.humidity}`;
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+  axios.get(apiUrl).then(humidity);
 }
 
 function handlePosition(position) {
