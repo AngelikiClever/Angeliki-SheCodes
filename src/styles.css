@@ -44,6 +44,7 @@ h3 {
   margin-bottom: 5%;
   font-size: 40px;
 }
+
 .iconcolumn {
   margin-top: 30px;
 }
@@ -90,7 +91,9 @@ p {
 }
 
 .icon img {
-  width: 30px;
+  width: 10px;
+  display: block;
+  text-align: right;
 }
 
 .btn-outline-success {
