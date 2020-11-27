@@ -1,5 +1,5 @@
 let now = new Date();
-let h2 = document.querySelector("#currentdata");
+let h2 = document.querySelector("#currentdate");
 let days = [
   "Sunday",
   "Monday",
