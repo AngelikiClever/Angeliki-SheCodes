@@ -25,21 +25,21 @@ body {
 h1 {
   color: aliceblue;
   font-family: "Indie Flower", cursive;
-  text-align: right;
+  text-align: center;
   margin-top: 15%;
   margin-bottom: 0%;
 }
 h2 {
   color: aliceblue;
   font-family: "Indie Flower", cursive;
-  text-align: right;
+  text-align: center;
   margin-top: 1%;
   margin-bottom: 0%;
 }
 h3 {
   color: aliceblue;
   font-family: "Indie Flower", cursive;
-  text-align: right;
+  text-align: center;
   margin-top: 1%;
   margin-bottom: 5%;
   font-size: 40px;
