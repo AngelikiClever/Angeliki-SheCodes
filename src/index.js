@@ -30,7 +30,7 @@ function showcity(event) {
   event.preventDefault();
   let cityinput = document.querySelector("#city");
 
-  let h1 = document.querySelector("h1");
+  let h1 = document.querySelector("#city");
   h1.innerHTML = `📍 ${cityinput.value}`;
   searchCity(cityinput.value);
 }
@@ -38,7 +38,7 @@ let gobutton = document.querySelector("#search-form");
 gobutton.addEventListener("submit", showcity);
 
 function showTemp(response) {
-  let h1 = document.querySelector("h1");
+  let h1 = document.querySelector("#city");
   h1.innerHTML = `📍 ${response.data.name}`;
   let citytemp = Math.round(response.data.main.temp);
   let degrees = document.querySelector("#degrees");
