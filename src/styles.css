@@ -91,9 +91,10 @@ p {
 }
 
 .weathericon {
-  width: 10px;
+  width: 25px;
   display: block;
   text-align: right;
+  float: right;
 }
 
 .btn-outline-success {
