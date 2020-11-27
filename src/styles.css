@@ -51,12 +51,14 @@ h3 {
   color: aliceblue;
   font-family: "Indie Flower", cursive;
   font-size: 20px;
+  text-align: center;
 }
 
 .humidity {
   color: aliceblue;
   font-family: "Indie Flower", cursive;
   font-size: 20px;
+  text-align: center;
 }
 .card-header {
   text-align: center;
