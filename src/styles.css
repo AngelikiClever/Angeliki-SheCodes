@@ -92,13 +92,6 @@ p {
 .icon img {
   width: 30px;
   display: block;
-  text-align: left;
-  margin-top: 15%;
-  margin-bottom: 20%;
-  margin-left: 50px;
-}
-.weathericon {
-  margin-top: none;
 }
 
 .btn-outline-success {
