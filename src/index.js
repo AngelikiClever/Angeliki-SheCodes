@@ -28,7 +28,7 @@ function searchCity(city) {
 
 function showcity(event) {
   event.preventDefault();
-  let cityinput = document.querySelector("#city");
+  let cityinput = document.querySelector("#searchcity");
 
   let h1 = document.querySelector("#city");
   h1.innerHTML = `📍 ${cityinput.value}`;
