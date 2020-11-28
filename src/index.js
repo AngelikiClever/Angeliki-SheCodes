@@ -44,26 +44,25 @@ function displayForecast(response) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
     <div class="col">
-                    <div class="card border-info mb-3" style="max-width: 11rem;">
-                        <div class="card-header">
-                        ${formatHours(forecast.dt * 1000)}
-                        </div>
-                        <div class="card-body text-info">
-                          <img
+      <div class="card border-info mb-3" style="max-width: 11rem;">
+        <div class="card-header">
+          ${formatHours(forecast.dt * 1000)}
+            </div>
+        <div class="card-body text-info">
+             <img
         src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"
       />
-                          <div class="forecast-temperature">
+          <div class="forecast-temperature">
         <strong>
           ${Math.round(forecast.main.temp_max)}°
         </strong>
         ${Math.round(forecast.main.temp_min)}°
       </div>
-                        </div>
-                      </div>
-                </div>
-                `;
+       </div>
+      </div>
+      </div>`;
   }
 }
 
