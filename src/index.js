@@ -36,34 +36,14 @@ function formatHours(timestamp) {
 }
 
 function displayForecast(response) {
-  let forecastelement = querySelector("#forecast");
-  forecastelement = response.data.list[0];
-  forecastelement.innerHTML = `
-  <div class="col">
-                    <div class="card border-info mb-3" style="max-width: 11rem;">
-                        <div class="card-header">
-                        ${formatHours(forecast.dt * 1000)}
-                        </div>
-                        <div class="card-body text-info">
-                          <img
-        src="http://openweathermap.org/img/wn/${
-          forecast.weather[0].icon
-        }@2x.png"
-      />
-                          <div class="forecast-temperature">
-        <strong>
-          ${Math.round(forecast.main.temp_max)}°
-        </strong>
-        ${Math.round(forecast.main.temp_min)}°
-      </div>
-                        </div>
-                      </div>
-                </div>
-                `;
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = null;
+  let forecast = null;
 
-                forecastelement = response.data.list[1];
-  forecastelement.innerHTML += `
-  <div class="col">
+  for (let index = 0; index < 6; index++) {
+    forecast = response.data.list[index];
+    forecastElement.innerHTML += `
+    <div class="col">
                     <div class="card border-info mb-3" style="max-width: 11rem;">
                         <div class="card-header">
                         ${formatHours(forecast.dt * 1000)}
@@ -84,7 +64,9 @@ function displayForecast(response) {
                       </div>
                 </div>
                 `;
+  }
 }
+
 
 
 function searchCity(city) {
