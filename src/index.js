@@ -21,13 +21,29 @@ let minutes = now.getMinutes();
 
 h2.innerHTML = `${day}, ${hour}:${minutes}`;
 
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
+
 function displayForecast(response) {
   let forecastelement = querySelector("#forecast");
   forecastelement = response.data.list[0];
   forecastelement.innerHTML = `
   <div class="col">
                     <div class="card border-info mb-3" style="max-width: 11rem;">
-                        <div class="card-header">Tuesday</div>
+                        <div class="card-header">
+                        ${formatHours(forecast.dt * 1000)}
+                        </div>
                         <div class="card-body text-info">
                           <img
         src="http://openweathermap.org/img/wn/${
