@@ -21,9 +21,38 @@ let minutes = now.getMinutes();
 
 h2.innerHTML = `${day}, ${hour}:${minutes}`;
 
+function displayForecast(response) {
+  let forecastelement = querySelector("#forecast");
+  forecastelement = response.data.list[0];
+  forecastelement.innerHTML = `
+  <div class="col">
+                    <div class="card border-info mb-3" style="max-width: 11rem;">
+                        <div class="card-header">Tuesday</div>
+                        <div class="card-body text-info">
+                          <img
+        src="http://openweathermap.org/img/wn/${
+          forecast.weather[0].icon
+        }@2x.png"
+      />
+                          <div class="forecast-temperature">
+        <strong>
+          ${Math.round(forecast.main.temp_max)}°
+        </strong>
+        ${Math.round(forecast.main.temp_min)}°
+      </div>
+                        </div>
+                      </div>
+                </div>
+                `
+}
+
+
 function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
   axios.get(apiUrl).then(showTemp);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+axios.get(apiURL).then(displayForecast);
 }
 
 function showcity(event) {
