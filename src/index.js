@@ -109,6 +109,8 @@ function handlePosition(position) {
 
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
   axios.get(apiUrl).then(showTemp);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+axios.get(apiUrl).then(displayForecast);
 }
 
 function currenttemp(event) {
