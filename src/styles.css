@@ -75,8 +75,9 @@ h3 {
   font-family: "Indie Flower", cursive;
   color: #b392ac;
 }
-.text-info {
+.forecast-icon {
   width: 20px;
+  display: block;
 }
 .forecast-temperature {
   text-align: center;
