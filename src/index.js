@@ -117,3 +117,6 @@ function currenttemp(event) {
 }
 let currentbutton = document.querySelector("#current");
 currentbutton.addEventListener("click", currenttemp);
+
+
+searchCity("Athens");
