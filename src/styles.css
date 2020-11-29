@@ -1,6 +1,7 @@
 body {
   background-image: url("https://cdn.shopify.com/s/files/1/1555/7781/products/Cloudy_Night_SMALL_1080x.jpg?v=1538052354");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   margin-top: 3%;
